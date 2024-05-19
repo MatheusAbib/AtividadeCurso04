@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saudações no Console</title>
+</head>
+<body>
+  <h1> Coursera modulo 4</h1>
+    <script>
+        const names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
+        
+        function printMessagesToConsole() {
+            names.forEach(name => {
+                if (name.charAt(0) === 'J') {
+                    console.log(`Adeus, ${name}`);
+                } else {
+                    console.log(`Olá, ${name}`);
+                }
+            });
+        }
+        
+        printMessagesToConsole();
+    </script>
+</body>
+</html>
