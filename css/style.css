@@ -1,0 +1,173 @@
+*{
+    font-size: 16px;
+
+}
+
+html{
+        background-color: #61122f; /* Cor de fundo do corpo */
+    
+}
+body {
+    font-family: "Oxygen", sans-serif;
+    color: aliceblue;
+    margin: 0; /* Remover margens padrão do corpo */
+}
+
+#header-nav {
+    background-color: #f6b319;
+    border-radius: 0;
+    border: 0;
+    padding: 1.5%;
+    overflow: hidden; 
+    padding-bottom: 2%;
+
+
+}
+
+#logo-img {
+   background: url('https://www.davidchuschinabistro.com/images/restaurant-logo_medium.png') no-repeat;
+   background-size: contain; /* Isso faz com que a imagem seja ajustada para caber dentro do elemento */
+   width: 117px;
+   height: 117px;
+   overflow: hidden; 
+   margin-left: 2%;
+   display: block; /* Garante que a imagem seja exibida como um bloco */
+   margin-top: -5px;
+   margin-bottom: 10px;
+
+   
+
+}
+.nav{
+    margin-left: 17px;
+    margin-top: -11px;
+}
+.nav h1{
+    font-size: 1.9em;
+    font-family: "Lora", serif;
+    color: #556c3e;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+}
+
+.nav p{
+    color: #000;
+    text-transform: uppercase;
+    font-size: .7em;
+    margin-top: 15px;
+}
+#menu {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #61122f;
+  }
+  .table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .table-container table {
+    border-collapse: collapse;
+    width: 400px;
+    margin: 10px;
+    border: 1px solid black;
+  }
+
+  td {
+    padding: 8px;
+    text-align: center;
+    background-color: rgb(171, 169, 169);
+  }
+  h1 {
+    font-size: 15px;
+    margin-left: 110px;
+    margin-top: 2px;
+    margin-bottom: 30px;
+  }
+  #beef {
+    background-color: rgba(255, 0, 0, 0.868);
+  }
+  #Chicken {
+    background-color: pink;
+  }
+  #Sushi {
+    background-color: rgba(196, 196, 62, 0.719);
+  }
+
+
+
+/* Estilos padrão */
+#menu-items {
+    display: none; /* Oculta o menu por padrão */
+    text-decoration: none;
+}
+
+/* Estilos para o botão de menu */
+#menu-toggle {
+    display: none; /* Oculta o botão de menu em telas grandes */
+    background-color: transparent;
+    border: 1px solid #61122f;
+    margin-left: 6%;
+    padding-right: 9px;
+    padding-left: 9px;
+
+
+
+}
+
+#menu-toggle:hover{
+    background-color: rgba(240, 248, 255, 0.171);
+}
+
+/* Estilos para telas menores */
+@media screen and (max-width: 768px) {
+    #menu-toggle {
+        display: block; /* Exibe o botão de menu */
+        text-decoration: none;
+
+    }
+    #menu-items {
+        display: none; /* Oculta o menu */
+    }
+    #menu-toggle.active + #menu-items {
+        display: block; /* Exibe o menu quando o botão é clicado */
+        
+    }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    #logo-img {
+        display: none; /* Esconde a imagem */
+    }
+}
+
+/* Estilos para ajustar o navbar-brand quando a imagem estiver oculta */
+@media screen and (max-width: 768px) {
+    .nav {
+        margin-left:9px; /* Ajusta a margem esquerda */
+        margin-top: 30px; /* Reseta a margem superior */
+    }
+    #menu-toggle{
+       margin-left: 75px;
+       margin-top: 30px;
+    
+    }
+}
+
+
+
+
